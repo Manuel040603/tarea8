@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * =====================================================================
+ *  EJERCICIO 2 — Flight Search: Room + DataStore (proyecto final de la unidad)
+ *  Archivo destino: app/src/main/AndroidManifest.xml
+ * =====================================================================
+ *  Proyecto Android Studio : Flight Search — PROYECTO NUEVO (New Project > Phone and Tablet > Empty Activity)
+ *  Package name            : com.example.flightsearch
+ *  SDK                     : Minimum SDK API 24 (valor por defecto del asistente) · emulador API 26 o superior
+ *  Recursos                : flight_search.db (en recursos_FlightSearch.zip) va en app/src/main/assets/database/. No usa imágenes.
+ *  Qué hacer               : NO reemplaces todo: solo AGREGA la línea
+ *                            android:name=".FlightSearchApplication" como primer atributo de
+ *                            <application. El resto déjalo como lo generó el asistente.
+ * =====================================================================
+ -->
+<!-- Así debe quedar el inicio de <application> (lo demás igual): -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:name=".FlightSearchApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FlightSearch">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.FlightSearch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
